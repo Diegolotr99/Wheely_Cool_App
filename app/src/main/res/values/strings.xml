@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wheely Cool</string>
+    <string name="done">Done</string>
+    <string name="add_spin_item">Add Spin Item</string>
+    <string name="save">Save</string>
+    <string name="spin">Spin</string>
+</resources>

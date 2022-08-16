@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spinItemsFragment">
+
+    <fragment
+        android:id="@+id/spinItemsFragment"
+        android:name="com.roam.diegogutierrez.wheelycool.ui.spinItems.SpinItemsFragment"
+        android:label="fragment_spin_items"
+        tools:layout="@layout/fragment_spin_items" >
+        <action
+            android:id="@+id/action_spinItemsFragment_to_spinWheelFragment"
+            app:destination="@id/spinWheelFragment" />
+
+        <action
+            android:id="@+id/action_spinItemsFragment_to_addSpinFragment"
+            app:destination="@id/add_spin_item"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/add_spin_item"
+        android:name="com.roam.diegogutierrez.wheelycool.ui.addSpinItem.AddSpinItemFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_spin_item" />
+
+    <fragment
+        android:id="@+id/spinWheelFragment"
+        android:name="com.roam.diegogutierrez.wheelycool.ui.spinWheel.SpinWheelFragment"
+        android:label="fragment_spin_items"
+        tools:layout="@layout/fragment_spin_wheel" />
+</navigation>
